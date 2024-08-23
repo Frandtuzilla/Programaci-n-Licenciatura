@@ -1,7 +1,7 @@
 fecha = "1/2/1999"
 
 if (fecha[1] == '/'):
-    dia = fecha[0]
+    dia = int(fecha[0])
 else:
 	dia = (int(fecha[0]) * 10) + int(fecha[1])
 

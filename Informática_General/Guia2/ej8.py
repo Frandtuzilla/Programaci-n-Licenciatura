@@ -1,0 +1,1 @@
+print(input("Ingrese una frase: ")[::-1])
