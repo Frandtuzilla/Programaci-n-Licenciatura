@@ -1,6 +1,5 @@
 
-flagSells = input("Ingresá \"NO\" si queres dejar de comprar: ")
-countEntries = 0
+flagSells = input("Ingresá \"NO\" si no quieres ingresar a comprar: ")
 
 while flagSells != "NO":
     print("Elija entre las siguientes opciones SOLO poniendo el número:")
