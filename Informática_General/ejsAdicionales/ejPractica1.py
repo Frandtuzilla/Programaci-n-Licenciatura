@@ -6,7 +6,15 @@ while repitoProceso:
     frase = input("Ingrese una frase de al menos 10 caracteres que solo deben ser mayúsculas y minúsculas: ")
     
     lenFrase = len(frase)
-    if lenFrase >= 10 and frase.isalpha():
+    i = 0
+    flag = True
+
+    while i < lenFrase and flag:
+            if not ('A' <= frase[i] <= 'Z' or 'a' <= frase[i] <= 'z'):
+                flag = False
+            i += 1
+
+    if lenFrase >= 10 and flag:
         repitoProceso = False
     else:
         print("Ingrese una frase de al menos 10 caracteres que solo deben ser mayúsculas y minúsculas: ")
