@@ -1,0 +1,40 @@
+// Declaración de Variables y Objetos
+let biblioteca = [
+  { titulo: "El Quijote", autor: "Miguel de Cervantes", año: 1605, cantidadDisponible: 5 },
+  { titulo: "1984", autor: "George Orwell", año: 1949, cantidadDisponible: 3 }
+];
+
+// Funciones
+function agregarLibro(titulo, autor, año, cantidadDisponible) {
+  biblioteca.push({ titulo, autor, año, cantidadDisponible });
+}
+
+function prestarLibro(titulo) {
+  let libro = biblioteca.find(lib => lib.titulo === titulo);
+  if (libro && libro.cantidadDisponible > 0) {
+    libro.cantidadDisponible--;
+    return "Préstamo confirmado";
+  } else {
+    return "Error: No hay ejemplares disponibles.";
+  }
+}
+
+function disponibilidadLibro(titulo) {
+  let libro = biblioteca.find(lib => lib.titulo === titulo);
+  return libro ? libro.cantidadDisponible > 0 : false;
+}
+
+function devolverLibro(titulo) {
+  let libro = biblioteca.find(lib => lib.titulo === titulo);
+  if (libro) {
+    libro.cantidadDisponible++;
+  }
+}
+
+// Ciclos y Métodos de Arrays
+biblioteca.forEach(libro => {
+  console.log(`Título: ${libro.titulo}, Disponibles: ${libro.cantidadDisponible}`);
+});
+
+let titulosLibros = biblioteca.map(libro => libro.titulo);
+let librosPublicadosDespuesDe2000 = biblioteca.filter(libro => libro.año > 2000);

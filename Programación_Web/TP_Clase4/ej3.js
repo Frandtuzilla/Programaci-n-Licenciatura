@@ -1,13 +1,22 @@
-// Task 1: Use `map` to create a new array with the length of each string
-const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
-const nameLengths = names.map(name => name.length);
-console.log("Lengths of names:", nameLengths); // [5, 3, 7, 5, 3]
+// forEach para verificar si es par o impar
+let numeros = [5, 10, 15, 20, 25];
+numeros.forEach(function(numero) {
+  if (numero % 2 === 0) {
+    console.log(`${numero} es par`);
+  } else {
+    console.log(`${numero} es impar`);
+  }
+});
 
-// Task 2: Use `filter` to create a new array with numbers greater than 10
-const numbers = [5, 12, 8, 21, 3, 18];
-const filteredNumbers = numbers.filter(number => number > 10);
-console.log("Numbers greater than 10:", filteredNumbers); // [12, 21, 18]
+// find para encontrar el primer número mayor que 20
+let numeroMayorQue20 = numeros.find(function(numero) {
+  return numero > 20;
+});
+console.log(numeroMayorQue20); // 25
 
-// Task 3: Use `reduce` to calculate the sum of all numbers in the array
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log("Sum of all numbers:", sum); // 67
+// some para verificar si hay al menos una persona mayor de 18 años
+let edades = [12, 17, 19, 15, 13];
+let hayMayorDe18 = edades.some(function(edad) {
+  return edad > 18;
+});
+console.log(hayMayorDe18); // true
