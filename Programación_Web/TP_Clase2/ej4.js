@@ -1,4 +1,4 @@
-let miArray = ["Hola", 1, 25, "Chau", 50];
+let ciudades = ["Tokio", "París", "Londres", "Nueva York", "Sídney"];
 
-console.log("Primer elemento: " + miArray[0]);
-console.log("Último elemento: " + miArray[miArray.length - 1]);
+ciudades[2] = "Roma"; // Reemplaza Londres por Roma
+console.log(ciudades); // ["Tokio", "París", "Roma", "Nueva York", "Sídney"]

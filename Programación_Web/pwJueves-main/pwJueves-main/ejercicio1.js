@@ -10,7 +10,7 @@
 6. Convierte el array de objetos a JSON utilizando `JSON.stringify`, y luego conviértelo de vuelta a un objeto con `JSON.parse`.
 */
 let tareas = []
-let serial = 0
+
 function agregarTarea(nombre,array,estado){
     let ultimo = (array.length)
     let tarea = {id:ultimo,nombre:nombre,completado:estado}

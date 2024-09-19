@@ -1,7 +1,7 @@
-function alMenosUnoEsVerdadero(arg1, arg2, arg3) {
-    return arg1 || arg2 || arg3;
-}
-
-console.log(alMenosUnoEsVerdadero(true, false, false));  // "true"
-console.log(alMenosUnoEsVerdadero(false, false, false)); // "false"
-console.log(alMenosUnoEsVerdadero(false, true, true));   // "true"
+function verificarBooleans(b1, b2, b3, b4) {
+    return (b1 || b2) && (!b3 || !b4);
+  }
+  
+  console.log(verificarBooleans(true, false, true, false)); // true
+  console.log(verificarBooleans(false, false, true, true)); // false
+  

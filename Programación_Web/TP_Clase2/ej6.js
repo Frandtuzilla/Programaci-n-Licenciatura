@@ -1,17 +1,6 @@
-let esLunes = true;
-let esFestivo = false;
+let var1 = true;
+let var2 = false;
+let var3 = true;
 
-// Usar el operador AND (&&)
-let resultadoAnd = esLunes && esFestivo;
-console.log("Resultado de esLunes && esFestivo: " + resultadoAnd); // false
-
-// Usar el operador OR (||)
-let resultadoOr = esLunes || esFestivo;
-console.log("Resultado de esLunes || esFestivo: " + resultadoOr); // true
-
-// Usar el operador NOT (!)
-let resultadoNotLunes = !esLunes;
-console.log("Resultado de !esLunes: " + resultadoNotLunes); // false
-
-let resultadoNotFestivo = !esFestivo;
-console.log("Resultado de !esFestivo: " + resultadoNotFestivo); // true
+let resultado = (var1 && var2) || (var1 && var3);
+console.log(resultado); // true (al menos dos son verdaderas)
