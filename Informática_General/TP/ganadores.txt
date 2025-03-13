@@ -1,0 +1,185 @@
+Nombre del Atleta: ZHANG Yufei
+Pais: China
+Medallas: 0,1,5
+---
+Nombre del Atleta: MARCHAND Leon
+Pais: Francia
+Medallas: 4,0,1
+---
+Nombre del Atleta: HUSKE Torri
+Pais: USA
+Medallas: 3,2,0
+---
+Nombre del Atleta: O'CALLAGHAN Mollie
+Pais: Australia
+Medallas: 3,1,1
+---
+Nombre del Atleta: SMITH Regan
+Pais: USA
+Medallas: 2,3,0
+---
+Nombre del Atleta: McKEOWN Kaylee
+Pais: Australia
+Medallas: 2,1,2
+---
+Nombre del Atleta: McINTOSH Summer
+Pais: Canada
+Medallas: 3,1,0
+---
+Nombre del Atleta: BILES Simone
+Pais: USA 
+Medallas: 3,1,0
+---
+Nombre del Atleta: OKA Shinnosuke
+Pais: Japon
+Medallas: 3,0,1
+---
+Nombre del Atleta: TITMUS Ariarne
+Pais: Australia
+Medallas: 2,2,0
+---
+Nombre del Atleta: DOUGLASS Kate
+Pais: USA
+Medallas: 2,2,0
+---
+Nombre del Atleta: WALSH Gretchen
+Pais: USA
+Medallas: 2,2,0
+---
+Nombre del Atleta: LEDECKY Katie
+Pais: USA
+Medallas: 2,1,1
+---
+Nombre del Atleta: ANDRADE Rebeca
+Pais: Brazil
+Medallas: 1,2,1
+---
+Nombre del Atleta: YANG Junxuan
+Pais: China
+Medallas: 0,1,3
+---
+Nombre del Atleta: KIM Woojin
+Pais: Corea del Sur
+Medallas: 3,0,0
+---
+Nombre del Atleta: LAVREYSEN Harrie
+Pais: Paises Bajos
+Medallas: 3,0,0
+---
+Nombre del Atleta: CARRINGTON Lisa
+Pais: Nueva Zelanda
+Medallas: 3,0,0
+---
+Nombre del Atleta: BOL Femke
+Pais: Paises Bajos
+Medallas: 1,1,1
+---
+Nombre del Atleta: FINUCANE Emma
+Pais: Gran Bretania
+Medallas: 1,0,2
+---
+Nombre del Atleta: LEMKE Max
+Pais: Alemania
+Medallas: 2,0,0
+---
+Nombre del Atleta:SCHOPF Jacob
+Pais: Alemania
+Medallas: 2,0,0
+---
+Nombre del Atleta: CHEBET Beatrice
+Pais: Kenya
+Medallas: 2,0,0
+---
+Nombre del Atleta: HOSKIN Alicia
+Pais: Nueva Zelanda
+Medallas: 2,0,0
+---
+Nombre del Atleta: YULO Carlos Edriel
+Pais: Filipinas
+Medallas: 2,0,0
+---
+Nombre del Atleta: TEBOGO Letsile
+Pais: Botswana
+Medallas: 1,1,0
+---
+Nombre del Atleta: MATIC Barbara
+Pais: Croacia
+Medallas: 1,0,0
+---
+Nombre del Atleta: ALVAREZ BORGES Erislandy
+Pais: Cuba
+Medallas: 1,0,0
+---
+Nombre del Atleta: DOSTAL Josef
+Pais: Republica Checa
+Medallas:1,0,0 
+---
+Nombre del Atleta: ALBERTARRIO Agustina
+Pais:Argentina 
+Medallas: 0,0,1
+---
+Nombre del Atleta: ALONSO Agostina
+Pais: Argentina
+Medallas: 0,0,1
+---
+Nombre del Atleta: TRINCHINETTI Eugenia
+Pais: Argentina
+Medallas: 0,0,1
+---
+Nombre del Atleta: BARAJAS Angel
+Pais: Colombia
+Medallas: 0,1,0
+---
+Nombre del Atleta: LOPEZ Yeison
+Pais: Colombia
+Medallas: 0,1,0
+---
+Nombre del Atleta: ANDERSSON Lasse
+Pais: Dinamarca
+Medallas: 1,0,0
+---
+Nombre del Atleta: ARNOLDSEN Thomas
+Pais: Dinamarca
+Medallas: 1,0,0
+---
+Nombre del Atleta: ELGENDY Ahmed
+Pais: Egypto
+Medallas: 1,0,0
+---
+Nombre del Atleta: BAENA Alex
+Pais: Espania
+Medallas: 1,0,0
+---
+Nombre del Atleta: TOLA Tamirat
+Pais: Etiopia
+Medallas: 1,0,0
+---
+Nombre del Atleta: ANTROPOVA Ekaterina
+Pais: Italia
+Medallas: 1,0,0
+---
+Nombre del Atleta: BACOSI Diana
+Pais: Italia
+Medallas: 1,0,0
+---
+Nombre del Atleta: GARIBAY Hector
+Pais: Bolivia
+Medallas: 0,0,0
+---
+Nombre del Atleta: RAMZY AL Duhamy
+Pais: Arabia Saudita
+Medallas: 0,0,0
+---
+Nombre del Atleta: MATHEO Mateos
+Pais: Paraguay
+Medallas: 0,0,0
+---
+Nombre del Atleta: LEAGUE Diamond
+Pais: Francia
+Medallas: 0,0,0
+
+
+
+
+
+
