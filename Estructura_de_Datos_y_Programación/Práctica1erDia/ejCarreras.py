@@ -57,3 +57,6 @@ def top3(historial_carrera):
         for auto, distancia in autos_ordenados: # Itero a través de los autos ordenados
             if distancia in top_valores: # Si la distancia está en el top 3, agregar al podio
                 archivo.write(f"{auto}: {distancia} km\n")
+    
+
+top3(resultado)
