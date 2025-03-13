@@ -34,34 +34,32 @@ def avances(novedades, historial_carrera):
 
 
 # Pruebo si funciona
-updated_list = avances(novedades, historial_carrera)
-print("Historial Carrera:", updated_list)
+nueva_lista = avances(novedades, historial_carrera)
+print("Historial Carrera:", nueva_lista)
 
 
 
 def top3(historial_carrera):
-    distancias = {}  # Crear diccionario para almacenar la distancia de cada auto
+    distancias = {}  # Creo diccionario para almacenar la distancia de cada auto
     
-    # Iterar a través del historial_carrera para obtener autos y distancias
+    # Itero a través del historial_carrera para guardar autos y distancias en el diccionario
     for i in range(0, len(historial_carrera), 2):
         auto = historial_carrera[i]
         distancia = int(historial_carrera[i + 1])
         distancias[auto] = distancia
     
-    # Ordenar los autos por distancia (de mayor a menor)
-    autos_ordenados = sorted(distancias.items(), key=lambda x: x[1], reverse=True)
+    # Ordeno los autos por distancia (de mayor a menor) / Se basa en el segundo elemento (x[1], que es la distancia) / El reverse es porque sino ordena de menor a mayor
+    autos_ordenados = sorted(distancias.items(), key=lambda x: x[1], reverse=True) 
     
-    # Manejar el top 3 considerando empates
-    top_valores = sorted(set(distancias.values()), reverse=True)[:3]
+    # Le pido los valores de los diccionarios (km), los ordeno de mayor a menor, y me quedo con los 3 primeros.
+    top_valores = sorted(set(distancias.values()), reverse=True)[:3]  
     
-    podio = []
-    with open("top3.txt", "w") as archivo:
-        for auto, distancia in autos_ordenados:
-            if distancia in top_valores:
+    with open("top3.txt", "w") as archivo: # Si existe el archivo, se sobreescribe. Sino, se crea.
+        for auto, distancia in autos_ordenados: # Itero a través de los autos ordenados
+            if distancia in top_valores: # Si la distancia está en el top 3, agregar al podio
                 archivo.write(f"{auto}: {distancia} km\n")
-                podio.append(auto)
     
-    return podio
+    return
 
 # Pruebo si funciona
-podio = top3(updated_list)
+podio = top3(nueva_lista)
