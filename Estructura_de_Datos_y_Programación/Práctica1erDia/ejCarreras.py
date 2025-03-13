@@ -3,44 +3,39 @@ novedades = [1, "20", 2, "25", 3, "20", 3, "Hola", 3, "A", 1, "P", 4, "18", 2, "
 historial_carrera = []
 
 def avances(novedades: list, historial_carrera: list):
-    lista_aux = []  # Lista auxiliar para guardar los valores
+    lista_abandono = []  # Lista para guardar los autos que ya abandonaron
     i = 0
     
-    while i < len(novedades) - 1:  # Recorro la lista sin exceder el índice
-        auto = novedades[i]         # Guardo el número de auto
-        estado = novedades[i + 1]   # Guardo el estado asociado al auto
+    while i < len(novedades) - 1:          # Recorro la lista sin exceder el índice
+        auto = novedades[i]                # Guardo el número de auto
+        estado = novedades[i + 1]          # Guardo el estado asociado al auto
+        
+        if estado == "A":                  # Si el estado es 'A' ...
+            lista_abandono.append(auto)    # ... agrego el auto a la lista negra
 
-        if auto not in lista_aux and estado not in ['A', 'P']:  
-            # Si el auto no está en lista_aux y su estado no es 'A' ni 'P', lo agrego
-            lista_aux.append(auto)
-            lista_aux.append(estado)
-        elif auto in lista_aux:  
-            index = lista_aux.index(auto)
+        if auto not in historial_carrera and auto not in lista_abandono and estado != 'P':  
+            # Si el auto no está en historial_carrera, tampoco en la lista negra y su estado no es 'P', lo agrego
+            historial_carrera.append(auto)
+            historial_carrera.append(estado)
+        elif auto in historial_carrera:  
+            index = historial_carrera.index(auto)
             if estado == 'A':  
                 # Si el estado es 'A', eliminamos el auto y su estado
-                lista_aux.pop(index)
-                lista_aux.pop(index)
+                historial_carrera.pop(index)
+                historial_carrera.pop(index)
             elif estado != 'P':  
                 # Si el estado no es 'P', intentamos sumar valores
                 try:
-                    lista_aux[index + 1] = str(int(lista_aux[index + 1]) + int(estado))
+                    historial_carrera[index + 1] = str(int(historial_carrera[index + 1]) + int(estado))
                 except ValueError:
                     print(f"Error: No se pudo convertir el estado '{estado}' a un número para el auto {auto}")
 
         i += 2  # Avanzo al siguiente par
 
-    historial_carrera.extend(lista_aux)  # Copio los nuevos valores
     return historial_carrera
 
 resultado = avances(novedades, historial_carrera)
-print(resultado)
-
-
-
-# Pruebo si funciona
-nueva_lista = avances(novedades, historial_carrera)
-print("Historial Carrera:", nueva_lista)
-
+print("Historial Carrera:", resultado)
 
 
 def top3(historial_carrera):
@@ -62,8 +57,3 @@ def top3(historial_carrera):
         for auto, distancia in autos_ordenados: # Itero a través de los autos ordenados
             if distancia in top_valores: # Si la distancia está en el top 3, agregar al podio
                 archivo.write(f"{auto}: {distancia} km\n")
-    
-    return
-
-# Pruebo si funciona
-podio = top3(nueva_lista)
