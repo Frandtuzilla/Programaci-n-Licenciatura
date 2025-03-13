@@ -50,7 +50,7 @@ def top3(historial_carrera):
     # Ordeno los autos por distancia (de mayor a menor) / Se basa en el segundo elemento (x[1], que es la distancia) / El reverse es porque sino ordena de menor a mayor
     autos_ordenados = sorted(distancias.items(), key=lambda x: x[1], reverse=True) 
     
-    # Le pido los valores de los diccionarios (km), los ordeno de mayor a menor, y me quedo con los 3 primeros.
+    # Le pido los valores de los diccionarios (km), (set) eliminano los valores duplicados, los ordeno de mayor a menor, y me quedo con los 3 primeros.
     top_valores = sorted(set(distancias.values()), reverse=True)[:3]  
     
     with open("top3.txt", "w") as archivo: # Si existe el archivo, se sobreescribe. Sino, se crea.
