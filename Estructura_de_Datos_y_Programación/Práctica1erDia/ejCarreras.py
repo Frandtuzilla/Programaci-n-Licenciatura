@@ -27,7 +27,6 @@ def avances(novedades, historial_carrera):
         
         i += 2  # Avanzo al siguiente par
 
-    # historial_carrera.clear()  # Si quisiera borrar el historial anterior
     historial_carrera.extend(lista_aux)  # Copio los nuevos valores
 
     return historial_carrera
