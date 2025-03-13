@@ -1,4 +1,4 @@
-novedades = [ 1, "20", 2, "25", 3, "20", 3, "A", 1, "P", 4, "18", 2, "A", 5, "50", 5, "25", 6, "15", 7, "20"]
+novedades = [ 1, "20", 2, "25", 3, "20", 3, "A", 1, "P", 4, "18", 2, "A", 5, "50", 5, "25", 6, "15", 7, "20", 8, "75"]
 
 historial_carrera = []
 
@@ -25,7 +25,6 @@ def avances(novedades, historial_carrera):
                 # Si el estado no es 'P', sumamos valores
                 lista_aux[index + 1] = str(int(lista_aux[index + 1]) + int(estado))
         
-        print(lista_aux)
         i += 2  # Avanzo al siguiente par
 
     # historial_carrera.clear()  # Si quisiera borrar el historial anterior
@@ -33,36 +32,30 @@ def avances(novedades, historial_carrera):
 
     return historial_carrera
 
+
+
 # Pruebo si funciona
 updated_list = avances(novedades, historial_carrera)
 print("Historial Carrera:", updated_list)
 
+
+
 def top3(historial_carrera):
-    distancias = {}     # Crear diccionario para almacenar la distancia de cada auto
+    distancias = {}  # Crear diccionario para almacenar la distancia de cada auto
     
-    i = 0     # Iterar a través del historial_carrera para obtener autos y distancias
-    while i < len(historial_carrera):
+    # Iterar a través del historial_carrera para obtener autos y distancias
+    for i in range(0, len(historial_carrera), 2):
         auto = historial_carrera[i]
-        distancia = int(historial_carrera[i+1])
+        distancia = int(historial_carrera[i + 1])
         distancias[auto] = distancia
-        i += 2
     
-    autos_ordenados = sorted(distancias.items(), key=lambda x: x[1], reverse=True)     # Ordenar los autos por distancia (de mayor a menor)
+    # Ordenar los autos por distancia (de mayor a menor)
+    autos_ordenados = sorted(distancias.items(), key=lambda x: x[1], reverse=True)
     
     # Manejar el top 3 considerando empates
-    top_distancias = []
+    top_valores = sorted(set(distancias.values()), reverse=True)[:3]
+    
     podio = []
-    
-    # Obtener las distancias únicas ordenadas
-    distancias_unicas = sorted(list(set(d for _, d in autos_ordenados)), reverse=True)
-    
-    # Considerar hasta 3 posiciones (o menos si no hay suficientes)
-    top_posiciones = min(3, len(distancias_unicas))
-    
-    # Tomar las distancias correspondientes a las primeras 3 posiciones
-    top_valores = distancias_unicas[:top_posiciones]
-    
-    # Crear el archivo top3.txt
     with open("top3.txt", "w") as archivo:
         for auto, distancia in autos_ordenados:
             if distancia in top_valores:
